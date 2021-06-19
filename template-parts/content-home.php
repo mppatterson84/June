@@ -1,6 +1,6 @@
 <article>
     <!-- image is not resizing here -->
-    <img src="<?php the_post_thumbnail_url('medium') ?>" alt="image">
+    <img class="featured" src="<?php the_post_thumbnail_url('medium') ?>" alt="image">
     <a href="<?php the_permalink(); ?>">
         <h3><?php the_title(); ?></h3>
     </a>

@@ -29,8 +29,15 @@ main {
     padding-top: 2em;
 }
 
-img {
+img,
+img.featured {
     max-width: 100%;
+    height: auto;
+}
+
+img.logo {
+    max-width: 23px;
+    height: auto;
 }
 
 footer {
