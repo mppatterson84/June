@@ -44,10 +44,10 @@ footer {
     grid-column: 1/4;
     grid-row: end;
     height: 100px;
-    color: white;
     padding: 1em;
     margin-top: 2em;
     background-color: #212529;
+    color: white;
 }
 
 /* Extra small screens, portrait phones, 567px and down */
