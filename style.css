@@ -28,6 +28,11 @@ main {
     margin: auto;
     padding-top: 2em;
 }
+
+img {
+    max-width: 100%;
+}
+
 footer {
     grid-column: 1/4;
     grid-row: end;
