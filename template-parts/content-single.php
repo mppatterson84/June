@@ -1,5 +1,8 @@
 <article>
     <header class="content-header">
+        <?php if (has_post_thumbnail()) : ?>
+            <img class="featured" src="<?php the_post_thumbnail_url('medium') ?>" alt="featured image">
+        <?php endif; ?>
         <h1><?php the_title() ?></h1>
         <div class="meta mb-3">
             <span class="date"><?php the_date(); ?></span>

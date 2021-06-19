@@ -1,6 +1,8 @@
 <article>
     <!-- image is not resizing here -->
-    <img class="featured" src="<?php the_post_thumbnail_url('medium') ?>" alt="image">
+    <?php if (has_post_thumbnail()) : ?>
+        <img class="featured" src="<?php the_post_thumbnail_url('medium') ?>" alt="featured image">
+    <?php endif; ?>
     <a href="<?php the_permalink(); ?>">
         <h3><?php the_title(); ?></h3>
     </a>
