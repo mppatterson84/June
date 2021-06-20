@@ -52,3 +52,32 @@ function june_register_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'june_register_scripts');
+
+//register sidebars
+function june_register_sidebars()
+{
+    register_sidebar(
+        array(
+            'id'            => 'primary-left',
+            'name'          => __('Left Primary Sidebar'),
+            'description'   => __('The left primary sidebar for the theme.'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'primary-right',
+            'name'          => __('Right Primary Sidebar'),
+            'description'   => __('The right primary sidebar for the theme.'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+}
+
+add_action('widgets_init', 'june_register_sidebars');
