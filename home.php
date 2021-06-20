@@ -2,10 +2,6 @@
 get_header();
 ?>
 
-<aside class="col-md-3 order-2 order-md-first">
-    <?php get_sidebar('primary-left') ?>
-</aside>
-
 <div class="col-md-6">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php get_template_part('template-parts/content', 'home'); ?>
@@ -14,10 +10,6 @@ get_header();
         <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
     <?php endif; ?>
 </div>
-
-<aside class="col-md-3 order-3">
-    <?php get_sidebar('primary-right') ?>
-</aside>
 
 <div class="row order-4">
     <div class="col md-4"></div>

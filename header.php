@@ -76,3 +76,6 @@
 
     <main class="container">
         <div class="row">
+            <aside class="col-md-3 order-2 order-md-first">
+                <?php get_sidebar('primary-left') ?>
+            </aside>

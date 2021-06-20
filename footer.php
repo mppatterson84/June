@@ -1,3 +1,6 @@
+<aside class="col-md-3 order-3">
+    <?php get_sidebar('primary-right') ?>
+</aside>
 </div>
 </main>
 
