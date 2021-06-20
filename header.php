@@ -56,5 +56,5 @@
         </div>
     </nav>
 
-    <div class="body-grid">
-        <main class="container">
+    <main class="container">
+        <div class="row">

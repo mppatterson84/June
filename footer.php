@@ -1,12 +1,13 @@
-    </main>
-    <footer>
-        <p>Footer content.</p>
-    </footer>
-    </div>
+</div>
+</main>
 
-    <?php
-    wp_footer();
-    ?>
-    </body>
+<footer>
+    <p>Footer content.</p>
+</footer>
 
-    </html>
+<?php
+wp_footer();
+?>
+</body>
+
+</html>
