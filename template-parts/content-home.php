@@ -1,4 +1,4 @@
-<article class="col-md-6">
+<article class="pb-3 mb-5 border-bottom border-dark">
     <!-- image is not resizing here -->
     <?php if (has_post_thumbnail()) : ?>
         <img class="featured" src="<?php the_post_thumbnail_url('medium') ?>" alt="featured image">

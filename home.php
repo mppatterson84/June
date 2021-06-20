@@ -6,12 +6,14 @@ get_header();
     <?php get_sidebar('primary-left') ?>
 </aside>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php get_template_part('template-parts/content', 'home'); ?>
-    <?php endwhile;
-else : ?>
-    <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
-<?php endif; ?>
+<div class="col-md-6">
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php get_template_part('template-parts/content', 'home'); ?>
+        <?php endwhile;
+    else : ?>
+        <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
+    <?php endif; ?>
+</div>
 
 <aside class="col-md-3 order-3">
     <?php get_sidebar('primary-right') ?>
