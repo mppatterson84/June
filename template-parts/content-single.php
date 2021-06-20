@@ -1,4 +1,4 @@
-<article>
+<article class="col-md-6">
     <header class="content-header">
         <?php if (has_post_thumbnail()) : ?>
             <img class="featured" src="<?php the_post_thumbnail_url('medium') ?>" alt="featured image">

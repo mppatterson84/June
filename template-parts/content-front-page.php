@@ -1,4 +1,4 @@
-<article>
+<article class="col">
 
     <?php
     the_content();
