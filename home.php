@@ -10,7 +10,11 @@ else : ?>
 <?php endif; ?>
 
 <?php
-the_posts_pagination()
+bs5_the_posts_pagination(
+    array(
+        'type' => 'list'
+    )
+)
 ?>
 
 <?php

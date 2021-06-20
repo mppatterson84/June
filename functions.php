@@ -3,6 +3,9 @@
 // Include custom navwalker
 require_once(get_template_directory() . '/inc/bs5navwalker.php');
 
+// Include custom pagination
+require_once(get_template_directory() . '/inc/bs5pagination.php');
+
 // Theme support
 function june_theme_support()
 {
