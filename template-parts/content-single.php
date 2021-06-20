@@ -1,9 +1,9 @@
 <article class="col-md-6">
     <header class="content-header">
         <?php if (has_post_thumbnail()) : ?>
-            <img class="featured" src="<?php the_post_thumbnail_url('medium') ?>" alt="featured image">
+            <img class="featured mb-3" src="<?php the_post_thumbnail_url('medium') ?>" alt="featured image">
         <?php endif; ?>
-        <h1><?php the_title() ?></h1>
+        <h1 class="pb-3"><?php the_title() ?></h1>
         <div class="meta mb-3">
             <span class="date"><?php the_date(); ?></span>
             <span><?php the_tags('<span class="mx-1 btn btn-outline-primary btn-sm"><i class="bi bi-tag"></i>', '</span><span class="mx-1 btn btn-outline-primary btn-sm"><i class="bi bi-tag"></i>', '</span>'); ?></span>
