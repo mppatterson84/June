@@ -17,13 +17,31 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
-                <?php if (get_theme_mod('custom_logo')) : ?>
-                    <img class="logo" src="<?= wp_get_attachment_image_src(get_theme_mod('custom_logo'))[0] ?>" alt="Site Logo">
-                <?php else : ?>
-                    <?php bloginfo('name'); ?>
-                <?php endif ?>
-            </a>
+            <?php if (get_theme_mod('display_navbar_brand', 'show') == 'show') : ?>
+                <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
+                    <?php if (get_theme_mod('custom_logo')) : ?>
+                        <?php if (get_theme_mod('display_navbar_namelogo', 'show') == 'show') : ?>
+                            <img class="logo" src="<?= wp_get_attachment_image_src(get_theme_mod('custom_logo'))[0] ?>" alt="Site Logo">
+                        <?php else : ?>
+                            <div></div>
+                        <?php endif ?>
+                        <?php if (get_theme_mod('display_navbar_tagline', 'show') == 'show') : ?>
+                            <span class="px-3"><?php bloginfo('description'); ?></span>
+                        <?php endif ?>
+                    <?php else : ?>
+                        <?php if (get_theme_mod('display_navbar_namelogo', 'show') == 'show') : ?>
+                            <span class="px-3"><?php bloginfo('name'); ?></span>
+                        <?php else : ?>
+                            <div></div>
+                        <?php endif ?>
+                        <?php if (get_theme_mod('display_navbar_tagline', 'show') == 'show') : ?>
+                            <span class="px-3"><?php bloginfo('description'); ?></span>
+                        <?php endif ?>
+                    <?php endif ?>
+                </a>
+            <?php else : ?>
+                <div></div>
+            <?php endif ?>
             <button class="navbar-toggler hamburger hamburger--slider animate__animated animate__rubberBand" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
                 <span class="hamburger-box">
