@@ -3,9 +3,12 @@
     <?php if (has_post_thumbnail()) : ?>
         <img class="featured mb-3" src="<?php the_post_thumbnail_url('medium') ?>" alt="featured image">
     <?php endif; ?>
-    <a href="<?php the_permalink(); ?>">
-        <h3 class="pb-3"><?php the_title(); ?></h3>
-    </a>
+    <p>
+        <a href="<?php the_permalink(); ?>">
+            <h3 class="pb-3"><?php the_title(); ?></h3>
+        </a>
+        <?php the_author_meta('display_name'); ?>
+    </p>
     <p>
         <span><?php the_date(); ?></span>
         <span><?php comments_number(); ?></span>
