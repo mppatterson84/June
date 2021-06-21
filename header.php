@@ -6,6 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <?php if (is_single()) : ?>
+        <?php get_template_part('template-parts/structured-data', 'single'); ?>
+    <?php endif; ?>
+
     <?php
     wp_head();
     ?>
