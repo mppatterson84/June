@@ -62,3 +62,8 @@ footer > #sidebar-footer {
 .screen-reader-text {
     visibility: hidden !important;
 }
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
