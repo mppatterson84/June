@@ -81,6 +81,17 @@ function june_register_sidebars()
             'after_title'   => '</h3>',
         )
     );
+    register_sidebar(
+        array(
+            'id'            => 'footer',
+            'name'          => __('Footer Sidebar'),
+            'description'   => __('The footer sidebar for the theme.'),
+            'before_widget' => '<div id="%1$s" class="widget p-4 %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
 }
 
 add_action('widgets_init', 'june_register_sidebars');

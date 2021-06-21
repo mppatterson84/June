@@ -5,7 +5,7 @@
 </main>
 
 <footer>
-    <p>Footer content.</p>
+    <?php get_sidebar('footer') ?>
 </footer>
 
 <?php

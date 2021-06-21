@@ -52,3 +52,9 @@ footer {
     background-color: #212529;
     color: white;
 }
+footer > #sidebar-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
