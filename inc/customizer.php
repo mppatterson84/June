@@ -51,5 +51,22 @@ function june_customize_register($wp_customize)
     ),
     'priority'  => 3
   ));
+
+  //display homepage cover
+  $wp_customize->add_setting('display_homepage_cover', array(
+    'default'     => 'show',
+    'transport'   => 'refresh'
+  ));
+  $wp_customize->add_control('display_homepage_cover', array(
+    'label' => 'Display Homepage Cover',
+    'section' => 'static_front_page',
+    'settings' => 'display_homepage_cover',
+    'type' => 'radio',
+    'choices' => array(
+      'show' => 'Show Homepage Cover',
+      'hide' => 'Hide Homepage Cover'
+    ),
+    'priority'  => 10
+  ));
 }
 add_action('customize_register', 'june_customize_register');

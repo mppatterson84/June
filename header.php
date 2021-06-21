@@ -74,6 +74,13 @@
         </div>
     </nav>
 
+    <!-- Put If Cover Section Here -->
+    <?php if (is_front_page()) : ?>
+        <?php if (get_theme_mod('display_homepage_cover', 'show') == 'show') : ?>
+            <?php get_template_part('template-parts/cover'); ?>
+        <?php endif ?>
+    <?php endif ?>
+
     <main class="container">
         <div class="row">
             <aside class="col-md-3 order-2 order-md-first">
