@@ -17,6 +17,10 @@ June WordPress Theme, (C) 2021 michael-patterson.com
 June is distributed under the terms of the GNU GPL.
 */
 
+body {
+    font-size: 1.1rem;
+}
+
 header.homepage-cover {
     display: flex;
     flex-direction: column;
