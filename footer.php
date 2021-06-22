@@ -2,7 +2,7 @@
     <?php get_sidebar('primary-right') ?>
 </aside>
 </div>
-</main>
+</div>
 
 <footer>
     <?php get_sidebar('footer') ?>

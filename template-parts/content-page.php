@@ -1,4 +1,4 @@
-<article class="col-md-6">
+<article>
 
     <h1><?php the_title(); ?></h1>
 
