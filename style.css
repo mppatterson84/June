@@ -38,6 +38,11 @@ main {
     padding-top: 2em;
 }
 
+aside {
+    display: flex;
+    justify-content: center;
+}
+
 img,
 img.featured {
     max-width: 100%;
