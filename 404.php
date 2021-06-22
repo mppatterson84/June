@@ -2,10 +2,13 @@
 get_header();
 ?>
 
-
-<article class="col-md-6">
-    There is no page here.
-</article>
+<main class="col-md-6">
+    <article>
+        <p>
+            There is no page here.
+        </p>
+    </article>
+</main>
 
 
 <?php
