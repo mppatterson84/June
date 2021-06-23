@@ -17,7 +17,7 @@
                 },
                 "publisher": {
                     "@type": "Organization",
-                    "name": "<?php the_permalink(); ?>",
+                    "name": "<?php echo site_url(); ?>",
                     "logo": {
                         "@type": "ImageObject",
                         "url": "<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))); ?>"
